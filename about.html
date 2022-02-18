@@ -1,0 +1,90 @@
+<!DocType html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ce'Niyah's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<!-- this is the script that tells your slicknav menu to appear in the header where the empty element, #mobilemenu, is -->
+<script type="text/javascript">
+        $(document).ready(function () {
+          $("#menu").slicknav({
+              prependTo: "#mobilemenu"
+          });
+      });
+</script>
+ 
+  <!-- <script>
+    $(function() {
+      $('#menu').slicknav();
+    });
+  </script> -->
+</head>
+<body class="container-about">
+    <header>
+        <h1><i class="fab fa-sketch fa-lg"></i>Ce'Niyah Ellison</h1>
+        <!--Slicknav menu-->
+        <nav id="mobilemenu"></nav>
+        <ul class="nav" id="menu">
+            <li><a class="top" href="index.html">Home</a></li>
+            <li class="active"><a class="top" href="about.html">About</a></li>
+            <li><a class="top" href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </header>
+    <div class="main2">
+      <div class="boxes">
+        <div class="box">
+          <h3>The following are courses I am taking or have taken while at UNC:</h3>
+          <ul class="about1">
+            <li class="about2">MATH 231: Calculus of Functions of One Variable I</li>
+            <li class="about2">COMP 110: Introduction to Programming and Data Science</li>
+            <li class="about2">Comp 283: Discrete Structures</li>
+            <li class="about2">COMP 210: Data Structures and Analysis</li>
+            <li class="about2">STOR 155: Introduction to Data Models and Inference</li>
+            <li class="about2">COMP 126: Practical Web Design and Development for Everyone</li>
+            <li class="about2">INLS 382: Information Systems Analysis and Design</li>
+            <li class="about2">INLS 573: Mobile Web Development</li>
+          </ul>
+        </div>
+        <div class="box" id="boxi">
+          <div class="boxed">
+            <h3>Career Interests:</h3>
+            <ul class="about1">
+              <li class="about2">Cybersecurity</li>
+              <li class="about2">Human Computer Interaction</li>
+              <li class="about2">Web Development</li>
+              <li class="about2">Data Science</li>
+            </ul>
+          </div>
+          <div class="boxed">
+            <img class="about" src="images/about-tech.jpg" alt="Picture of HCI">
+          </div>
+        </div>
+        <div class="box">
+          <h3>Hobbies & Skills:</h3>
+          <ul class="about1">
+            <li class="about2">Dancing</li>
+            <li class="about2">Singing</li>
+            <li class="about2">Volleyball</li>
+            <li class="about2">Play the Viola</li>
+            <li class="about2">Play Videogames</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-container">
+        <p id="footerp">How to find me...</p>
+        <a href="mailto:cre24@unc.edu" title="email"><i class="fas fa-envelope-square fa-3x" id="icon"></i></a>
+        <!-- <a href=""><i class="fab fa-twitter-square fa-lg"></i></a>
+        <a href=""><i class="fab fa-instagram-square fa-lg"></i></a>
+        <a href=""><i class="fab fa-facebook-square fa-lg"></i></a> -->
+        <a href="https://www.linkedin.com/in/ce-niyah-ellison/" title="linkedin"><i class="fab fa-linkedin fa-3x" id="icon"></i></a>
+        <a href="https://github.com/cre24" title="Github"><i class="fab fa-github-square fa-3x" id="icon"></i></a>
+    </footer>
+</body>
+</html>
