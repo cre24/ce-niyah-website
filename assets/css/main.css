@@ -3677,6 +3677,10 @@ input, select, textarea {
 
 /* Footer */
 
+i {
+    color: pink;
+}
+
 	#footer {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3779,3 +3783,18 @@ input, select, textarea {
 			}
 
 		}
+
+/* Class Alignment and Experience Alignment */
+.outside {
+	/* Align Elements in container horizontally */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.inside{
+	/* Align elements in each one vertically */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
