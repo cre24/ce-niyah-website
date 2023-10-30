@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>D3.js Tutorial</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <!-- <script src="data2.js"></script>
+  <script src="index.js"></script> -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: whitesmoke;
+    }
+
+    .text {
+        margin: 2rem;
+        /* text-indent: 10px; */
+        text-align: left;
+    }
+
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center;">America's largest magazine titles retained 95% of sales through Covid-19</h1>
+    <h3 style="text-align: center;">Remixed by Ce'Niyah Ellison</h3>
+    <h5 style="text-align: center;"><a href="https://pressgazette.co.uk/publishers/magazines/biggest-us-magazines-by-circulation/">Original Article by Wiliiam Turvill</a></h5>
+    
+    <p class="text">
+        America's largest magazines retained 95% of their circulation through the Covid-19 crisis, Press Gazette research suggests.
+        Strong print subscription bases and growing digital issue readership have helped the likes of Vanity Fair, Vogue and the New Yorker grow over the past year.
+    </p>
+    <p class="text">
+        Magazines were influenced by a variety of factors during the COVID-19 pandemic. The primary factor being retail closures and restrictions. Lockdowns and restrictions led to the temporary closure of many retail stores, including bookstores and newsstands.
+        This significantly impacted the availability of magazines for purchase. Another factor was supply chain distributions. The pandemic caused disruptions in global supply chains, affecting the population and distribution of physical magazines.
+        This could lead to delays in printing, distribution, and availability on newsstands. The last factor I will mention are consumer behavior changes. Consumer priorities and habits shifted during the pandemic. 
+        People focused on essentials and were more cautious with discretionary spending. This could have affected the willingness to purchase magazines.
+    </p>
+    <p class="text">
+        Despite the effects of the pandemic on magazine sales, an analysis of Alliance for Audited Media (AAM) figures suggests that magazines have fared well through the pandemic.
+    </p>
+    <!-- <p class="text">
+    Press Gazette's ranking of the 50 biggest US magazines by circulation shows that print remains the sector's dominant medium, despite subscription and single-copy sales falling in recent years.
+    On average across the top 50, print subscription circulations have fallen by 7% over the past two years, from 125m overall to 116m, while single-copy sales are down 11%, from 3.2m in the first half of 2019 to 2.8m in the first half of this year.
+    Digital subscription circulations, which include magazine readership through aggregators like Apple News+, have grown by 70% in the same period, from 4.3m to 7.3m.
+    </p> -->
+    <!-- <div style="text-align: center;">
+        <h1>Top 50 magazines graph goes here</h1>
+        <div id="chart"></div>
+    </div>
+    <script type="text/javascript" src="data1.js"></script> -->
+    <p class="text">
+        <em>
+            Note: The below figures are categorised by the AAM as paid digital subscription circulations. They include "individually paid, partnership, sponsored and multi-title" platforms including Apple News+ and Readly. 
+        </em>
+    </p>
+    <div style="text-align: center;">
+        <h1>Top 5 for digital circulation</h1>
+        <h3>Including Apple News+ and other aggregator readership, for first half of 2021</h3>
+        <ul style="list-style-position: inside; padding-left: 0;">Key: 
+            <li>Purple: US Weekly</li>
+            <li>Dark Blue: Men's Journal</li>
+            <li>Blue: Star Magazine</li>
+            <li>Green: Better Homes and Gardens</li>
+            <li>Yellow: Golf Digest</li>
+        </ul>
+        <div>
+        <div id="d3-container"> </div>
+        <h5>Source: Alliance for Audited Media</h5>
+    </div>
+    <p class="text">
+        The Top 5 Publishers in Digital Circulation increased revenue after COVID-19 and were able to retain sales. Due to the COVID-19 oandemic, there was an increase demand for digital content,
+        coupled with restrictions on physical access to stores, contributing to a surge in digital media subscription.
+    </p>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="index.js"></script>
+
+    <div style="text-align: center;">
+        <h1>Top 5 for print subscriptions</h1>
+        <select id="selectButton"></select>
+        <div id="my_dataviz"></div>
+        <h5>Source: Alliance for Audited Media</h5>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="data2.js"></script>
+    <p class="text">
+        Print subscription has decreased since the COVID-19 pandemic. There are several factors that contributed to this trend. The top possibility related to tge previous graph is the shift in consumer behavior.
+        With more people spending time indoors and online, there was a significant shift towards digital consumption of content. This included a preference for digital magazines over print for convenience and accessibility.
+        These trends are what caused magazines to turn to digital to alleviate the revenue declining in print.
+    </p>
+    <p class="text">
+        <em>
+            Note: Single-copy sales figures below are predominantly print rather than digital. The highest-ranking title for single-copy digital sales specifically was People, with an average of 396 copies per week.
+        </em>
+    </p>
+    <div style="text-align: center;">
+        <h1>Top 10 for single copy sales</h1>
+        <h3>Average for first half of 2021</h3>
+        <p>
+            <em>
+                <b>Hover over each dot to reveal which publication it is associated with.</b> <br>
+                Note: Each color represents a different publication.
+            </em>
+        </p>
+        <div id="chart"></div>
+        <h5>Source: Alliance for Audited Media</h5>
+    </div>
+    <script type="text/javascript" src="data1.js"></script>
+    <p class="text">
+        Covid-19s impact on single-copy sales fluctuated accross Publishers and did not have a trend. First For Women, Woman's World, and Magnolia Journal experienced decreased revenue each year. 
+        People, Woman's Day, Country Living, and Real Simple experienced decreased revenue from 2019 to 2020 but increased revenue from 2020 to 2021 with Country Living and Real Simple generating more revenue in 2021 than 2019.
+        Good Housekeeping and Food Network Magazine experienced increased revenue from 2019 to 2020 but decreased revenue from 2020 to 2021 with Good Housekeeping earning triple their revenue from 2019 in 2020.
+        Lastly, Better Homes And Gardnes was the only publication to increase revenue each year seemingly unaffected by the pandemic.
+    </p>
+    <p class="text">
+        In conclusion, the COVID-19 pandemic undeniably had a profound impact on magazine sales, reshaping the industry in unprecedented ways. 
+        The convergence of supply chain disruptions, shifts in consumer behavior, and economic uncertainties ushered in a period of transformation. 
+        Print subscriptions saw declines, driven by factors such as retail closures and a preference for digital consumption. Meanwhile, digital sales surged, fueled by convenience, accessibility, and the growing trend towards online content consumption.<br><br>
+        Furthermore, the pandemic accelerated the need for magazines to adapt swiftly to changing reader preferences, often requiring a pivot towards digital platforms and the optimization of subscription models. Content relevance emerged as a critical factor, as readers sought information on health, wellness, and home-related topics. These shifts, coupled with a focus on digital marketing strategies, reshaped the magazine landscape.
+        <br><br>
+        It is evident that the pandemic acted as a catalyst for change within the industry, compelling publishers to reevaluate their business models and strategies. While challenges were abundant, opportunities for innovation and growth emerged, particularly in the digital realm. As the world continues to navigate through these dynamic times, the lessons learned from the pandemic will likely continue to shape the future of magazine sales, fostering resilience and adaptability in an ever-evolving market.
+    </p>
+</body>
+</html>
