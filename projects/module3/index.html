@@ -79,10 +79,23 @@
                 .attr("stroke", function(d){ return myColor("valueA") })
                 .style("stroke-width", 4)
                 .style("fill", "none")
+            console.log(data.filter(function(d){return d.name=="Solar Energy"}))
+            const line2 = svg2
+                .append('g')
+                .append("path")
+                .datum(data.filter(function(d){return d.name=="Solar Energy"}))
+                .attr("d", d3.line()
+                    .x(function(d) { return x(d.year) })
+                    .y(function(d) { return y(+d.circulation) })
+                )
+                .attr("stroke", function(d){ return myColor("valueA") })
+                .style("stroke-width", 4)
+                .style("fill", "none")
+
 
             // A function that update the chart
             function update(selectedGroup) {
-
+                console.log(selectedGroup)
                 // Create new data with the selection?
                 const dataFilter = data.filter(function(d){return d.name==selectedGroup})
 
